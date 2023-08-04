@@ -1,0 +1,54 @@
+body {
+    background-color: #4d1b1b;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 50vw;
+}
+
+label {
+    margin: 0.5rem 0;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+    margin: 6px 0 12px 0;
+    width: 100%;
+
+}
+
+input,
+textarea {
+    background-color: #3c0a0a;
+    border: 3px solid #3c0a0a;
+    color: white;
+}
+
+textarea {
+    margin: 1em 0;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    height: 2em;
+    margin: 2em auto;
+    background-color: 8f0a0a;
+    border-color: white;
+    min-width: 250px;
+}

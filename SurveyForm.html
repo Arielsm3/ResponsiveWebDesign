@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<h1 id="title">Survey Form</h1>
+
+<link rel="stylesheets" href="styles.css">
+
+<p id="description">Please submit your information in this form.</p>
+
+<form id="survey-form" required>
+
+    <label id="name-label"> Name
+        <input id="name" type="text" placeholder="Enter name" required /></label>
+    <label id="email-label"> Email
+        <input id="email" type="email" placeholder="Enter email address" required /></label>
+    <label id="number-label"> Number
+        <input id="number" type="number" min="13" max="200" placeholder="Enter age" required />
+    </label>
+
+    <br>
+
+    <div>
+        <label for="dropdown">
+            <h2>Select position type:</h2>
+            <select id="dropdown">
+                <option>Part-time</option>
+                <option>Full-time</option>
+                <option>Seasonal</option>
+            </select>
+        </label>
+    </div>
+
+    <br>
+
+    <div>
+        <h2>Select a position time range:</h2>
+
+        <label for="radio-button-one"><input name="first-radio-group" type="radio" value="radio-button-one"
+                class="inline">
+            Full-time
+        </label>
+        <br>
+        <label for="radio-button-two">
+            <input name="first-radio-group" type="radio" value="radio-button-two" class="inline">
+            Part-time</label>
+        <br>
+        <label for="radio-button-three">
+            <input name="first-radio-group" type="radio" value="radio-button-three" class="inline">
+            Seasonal</label>
+
+    </div>
+
+    <br>
+
+    <label for="dropdown">
+
+        <div>
+            <h2>Select a job position</h2>
+            <label for="radio-button-a">
+                <input name="second-radio-group" type="radio" value="radio-button-a" class="inline">
+                Radio button A
+            </label>
+            <br>
+            <label for="radio-button-b">
+                <input name="second-radio-group" type="radio" value="radio-button-b" class="inline">
+                Radio button B
+            </label>
+        </div>
+
+        <br>
+        <div>
+            <h2>Which of the following skills do you possess?</h2>
+            <label for="first-checkbox">
+                <input type="checkbox" name="first-checkbox" value="checkbox-one" class="inline" />
+                Check this box
+            </label>
+            <label for="second-checkbox">
+                <input type="checkbox" name="second-checkbox" value="checkbox-two" class="inline" />
+                Check this box
+            </label>
+            <label for="third-checkbox">
+                <input type="checkbox" name="third-checkbox" value="checkbox-three" class="inline" />
+                Check this box
+            </label>
+        </div>
+        <br>
+
+        <textarea id="comments" name="comment-box" placeholder="Just a comment section..." rows="5" cols="30">
+  </textarea>
+
+        <br>
+
+        <input id="submit" type="submit" value="Submit" />
+</form>
